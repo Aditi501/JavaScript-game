@@ -1,0 +1,366 @@
+body{
+    margin:0 0;
+    left:0;
+    right:0;
+    background-color: #8CC461;
+}   
+.scores{
+    width: 800px;
+    height:140px;
+    display:flex;
+    border: 2px solid white;
+    border-radius: 13px;
+    color: white;
+    font-weight: 700;
+    margin: 2% 10% 1% 16%;
+}
+.div1{
+    margin-left: 90px;
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+.scores ul li{
+    list-style-type: none;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+.computerScore{
+    width:130px;
+    height:120px;
+    margin: 10px 10px;
+    color: gray;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px
+}
+.computerScore h1{
+    color: black;
+    width:100%;
+    line-height: 10%;
+    font-size: 49px;
+    font-family:'Roboto';
+}
+.info{
+    width: 750px;
+    min-height:7vh;
+    font-size:1.2rem;
+    margin: 0.2rem 0 0 17rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+.you, .machine{
+    display: none;
+}
+.triangle{
+    
+    margin-top: -1%;
+    margin-left: 33%;
+    width: 32%;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+}
+.icons{
+
+    background-color: white;
+    width:100px;
+    height: 100px;
+    border-radius: 65px;
+    display: block;
+    margin: 10px 0px;
+}
+.icons1{
+
+    background-color: white;
+    width:100px;
+    height: 100px;
+    border-radius: 65px;
+    display: none;
+    margin: 10px 0px;
+}
+.computer .line1{
+    display:none;
+}
+.computer .line2{
+    display:none;
+}
+.computer .line3{
+    display:none;
+}
+.rock{
+    border: 10px solid #0074B6;
+}
+.rock img{
+    width:63px;
+    height:58.17px;
+    margin: 20px 20px;
+}
+.scissor{
+    border: 10px solid #BD00FF;
+}
+.scissor img{
+    width: 37px;
+    height: 53.3px;
+    margin: 23px 20px 23px 30px;
+}
+.paper{
+    border: 10px solid #FFA943;
+    margin-top: 70px;
+}
+.paper img{
+    height: 70px;
+    width: 70px;
+    margin: 15px 30px 30px 15px;
+    border-radius: 65px;
+}
+.paper1{
+    border: 10px solid #FFA943;
+    margin-top: 70px;
+}
+.paper1 img{
+    height: 70px;
+    width: 70px;
+    margin: 15px 30px 30px 15px;
+    border-radius: 65px;
+}
+.line1{
+    position: relative;
+    width:170px;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 12px;
+    background-color: #004429;
+    margin-top:73px;
+    z-index: -1;
+}
+.line2{
+    position: relative;
+    transform: rotate(55deg);
+    width:205px;
+    height: 12px;
+    background-color: #004429;
+    margin-top: 20px;
+    margin-right:-65px;
+    z-index: -1;
+}
+.line3{
+    position: relative;
+    transform: rotate(125deg);
+    width:205px;
+    height: 12px;
+    background-color: #004429;
+    margin-top: 20px;
+    margin-left: -65px;
+    z-index: -1;
+}
+/* .computer{
+    display: none;
+} */
+.rulesbox{
+    position: absolute;
+    top:30%;
+    left: 75%;
+}
+.cross{
+    width: 47px;
+    height: 47px;
+    border: 5px solid white;
+    border-radius: 65px;
+    background-color: #FF0000;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    margin: 0px 0px -23px 220px;
+    position: relative;
+    z-index: 1;
+}
+.rules{
+   
+    width: 245px;
+    height: 290px;
+    border: 5px solid white;
+    border-radius: 13px;
+    background-color: #004429;
+    color: white;
+    
+    
+}
+.rules h3{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+.rules li{
+    list-style:none ;
+    font-size: 12px;
+    text-align: left ;
+    font-family: 'Roboto';
+    line-height: 11px;
+    margin: 25px 10px 5px 5px;
+}
+.rules li::before{
+    content:"■";
+    color:  yellow;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1.3em
+  
+}
+.buttonRule{
+    float:right;
+    position: absolute;
+    top: 92%;
+    left: 92%;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    width: 90px;
+    height: 33px;
+    border-radius: 8px;
+}
+.buttonRule1{
+    display: none;
+    float:right;
+    position: absolute;
+    top: 92%;
+    left: 92%;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    width: 90px;
+    height: 33px;
+    border-radius: 8px;
+}
+.win-section{
+    position: absolute;
+    top: 46%;
+    display:grid;
+    place-content: center;
+    left: 37%;
+    width: 25%;
+}
+.result{
+    position:absolute;
+    top: 25%;
+    left: 30%;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
+    line-height: 2px;
+    font-weight: 600;
+}
+.result1{
+    position:absolute;
+    top: 40%;
+    left: 32%;
+    font-size: 20.5px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    line-height: 10px;
+    letter-spacing: 5px;
+}
+.win-section button{
+    margin-left: 15%;
+    margin-top: 120%;
+}
+.replay{
+    width: 140px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #6B6B6B;
+}
+
+/* Win Page */
+
+#stars{
+    width: 490px;
+    height: 290px;
+    left:385px;
+    margin-top: 30px;
+   position: absolute;
+}
+#trophy{
+    position: relative;
+    width: 160px;
+    height:150px;
+    top: 165px;
+    margin-left: 42%;
+}
+.head1{
+    text-align: center;
+    margin-top: 14%;
+    color:#FFFFFF;
+    font-size: 70px;
+    font-family: 'Roboto';
+    letter-spacing: 0.6rem;
+    line-height: 51px;
+}
+.head2{
+    color:#FFFFFF;
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 1%;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin-left: 10px;
+}
+.play-again{
+    width: 140px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #6B6B6B;
+    margin-left: 44%;
+    margin-top: 20px;
+}
+/*...............................................................*/
+.new{
+   margin-top: 0.5rem;
+
+}
+.newhand{
+    margin-top: 0.5rem;
+    
+ 
+ }
+    
+.show{
+   position: absolute;
+   left: 24rem;
+   top: 18rem;
+ }
+ .box{
+    box-shadow: 5px 5px rgba(51, 145, 42, 0.39) , 10px 10px green, 15px 15px  lightgreen ;
+   -webkit-box-shadow: 0px 0px 2px 10px rgb(56, 145, 56) ,2px 2px 5px 40px rgba(75, 158, 67, 0.39), 1px 1px 1px 25px rgba(44, 126, 37, 0.39);
+    
+   
+ }
+ .right{
+    position:absolute;
+    left: 49rem;
+    top:18rem;
+    
+ }
+ .btn{
+    left: 83%;
+ }

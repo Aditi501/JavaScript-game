@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container1">
+            <div class="scores">
+               <ul>
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SCISSORS</li>
+               </ul>
+               <div class="div1">
+               <div class="computerScore">
+                <h4>COMPUTER SCORE</h4>
+                <h1 class="scoreCal Comp">0</h1>
+               </div>
+               <div class="computerScore">
+                <h4>YOUR<br>SCORE</h4>
+                <h1 class="scorecal User">0</h1>
+               </div>
+               </div>
+            </div>
+            <div class="info">
+                <p class="you">YOU PICKED</p>
+                <p class="machine">PC PICKED</p>
+            </div>
+            <div class="user">
+            <div class="triangle">
+                <div class="icons rock"><img src="icons8-fist-67 1.jpg"></div>
+                <div class="line1"></div>
+                <div class="icons scissor"><img src="17911 1.jpg"></div>
+                <div class="line2"></div>
+                <div class="icons paper"><img src="icons8-hand-64 1.jpg"></div>
+                <div class="line3"></div>
+            </div>
+            </div>
+            <div class="computer">
+                <div class="triangle">
+                    <div class="icons1 rock"><img src="icons8-fist-67 1.jpg"></div>
+                    <div class="line1 one"></div>
+                    <div class="icons1 scissor"><img src="17911 1.jpg"></div>
+                    <div class="line2 two"></div>
+                    <div class="icons1 paper1"><img src="icons8-hand-64 1.jpg"></div>
+                    <div class="line3 three"></div>
+                </div>
+                </div>
+            <div style="display: none;" class="rulesbox">
+                <div class="cross">X</div>
+            <div class="rules">
+                <h3>Game Rules</h3>
+                <ul>
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you'll count off  “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+        </div>
+        
+            <button type="button" class="buttonRule" onclick="rulesFunc()">RULES</button>
+            <a href="winPage.html"><button type="button" class="buttonRule1">NEXT</button></a>
+        
+            <div class="win-section">
+                <h3 class="result"></h3>
+                <h5 class="result1"></h5>
+                <button type="button" class="play-again" style="display: none;">PLAY AGAIN</button>
+                <button type="button" class="replay" style="display: none;">REPLAY</button>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
